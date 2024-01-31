@@ -1,15 +1,246 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  color: #3498db;
-  text-align: center;
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+header.header-transparent {
+  background-color: transparent;
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  margin-right: 50px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+header nav ul li a:hover {
+  background-color: #f2c46d;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #555;
+    display: none;
+  }
+  header nav ul.open {
+    display: flex;
+  }
+  header nav ul li {
+    margin: 5px 0;
+  }
 }
 
-p {
+/* Container styles */
+.container {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1180px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Main styles */
+main {
+  position: relative;
+}
+
+/* Jumbotron styles */
+.jumbotron {
+  position: relative;
+  height: 100vh;
+}
+.jumbotron img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.jumbotron .jumbotron-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.jumbotron .jumbotron-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.jumbotron .jumbotron-content button {
+  font-size: 1.2em;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .jumbotron .jumbotron-content h1 {
+    font-size: 2em;
+  }
+  .jumbotron .jumbotron-content button {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
+}
+
+/* Section styles */
+section {
+  margin-bottom: 20px;
+}
+
+/* Icons section styles */
+#health-benefits {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+#health-benefits .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#health-benefits .icons div {
+  flex: 1;
+  text-align: center;
+}
+#health-benefits .icons div img {
+  width: 20%;
+  height: auto;
+}
+#health-benefits .icons div p {
+  margin-top: 10px;
+}
+
+/* Blog section styles */
+#blog .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#blog .container img {
+  max-width: 20%;
+  height: auto;
+}
+#blog .container div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+}
+footer address {
+  font-style: normal;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  footer .container {
+    flex-direction: column; /* Change to column layout for mobile devices */
+    text-align: center; /* Center align content in mobile view */
+  }
+}
+footer form {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  footer form {
+    margin-top: 20px; /* Add some space between address and form in mobile view */
+  }
+}
+footer form input[type=email] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+}
+@media (max-width: 767px) {
+  footer form input[type=email] {
+    margin-right: 0; /* Remove right margin for mobile view */
+  }
+}
+footer form button[type=submit] {
+  background-color: #f2c46d;
+  color: #333;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #f2c46d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.center {
   text-align: center;
 }
