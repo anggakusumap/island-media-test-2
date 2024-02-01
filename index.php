@@ -40,6 +40,22 @@
                 lungo variety, as, siphon, ristretto, iced brewed and acerbic affogato grinder.
             </p>
 
+            <div id="images" class="">
+                <?php 
+                    // Include the PHP file to get the JSON data
+                    include 'data.php'; 
+
+                    // Loop through the images array and display each image
+                    foreach ($images as $image) {
+                        echo '<div>
+                            <p>'.$image["name"].'</p>
+                            <img src="' . $image["path"] . '" alt="' . $image["name"] . '">
+                        </div>';
+                    }
+                ?>
+            </div>
+
+
             <h2>Extraction instant that variety white robusta strong</h2>
             <p>
                 Coffee plunger pot sweet barista, grounds acerbic coffee instant crema cream in half and half. Spoon

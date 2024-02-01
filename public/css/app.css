@@ -120,7 +120,7 @@ main {
   text-align: center;
   z-index: 1;
   color: #fff;
-  height: 80%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -133,6 +133,12 @@ main {
 .jumbotron .jumbotron-content button {
   font-size: 1.2em;
   width: 50%;
+}
+@media (max-width: 768px) {
+  .jumbotron .jumbotron-content button {
+    font-size: 1.2em;
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .jumbotron .jumbotron-content h1 {
@@ -166,7 +172,7 @@ section {
 }
 #health-benefits .icons div img {
   width: 20%;
-  height: auto;
+  height: 80%;
 }
 #health-benefits .icons div p {
   margin-top: 10px;
@@ -218,13 +224,8 @@ footer form {
 }
 footer form input[type=email] {
   padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #fff;
-}
-@media (max-width: 767px) {
-  footer form input[type=email] {
-    margin-right: 0; /* Remove right margin for mobile view */
-  }
+  margin-right: 0px;
+  border: none;
 }
 footer form button[type=submit] {
   background-color: #f2c46d;
@@ -243,4 +244,42 @@ button {
 
 .center {
   text-align: center;
+}
+
+#images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add some breathing space between images */
+  padding: 20px; /* Add padding to the container */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+#images div {
+  position: relative; /* Make the parent div relative */
+}
+#images p {
+  position: absolute; /* Position the p tag absolutely */
+  top: 50%; /* Place it 50% from the top */
+  left: 50%; /* Place it 50% from the left */
+  transform: translate(-50%, -50%); /* Center the p tag */
+  color: white; /* Set the color to white */
+  text-align: center; /* Center text */
+  z-index: 1;
+}
+#images img {
+  max-width: 100%; /* Ensure images don't exceed the container width */
+  height: 350px; /* Maintain aspect ratio */
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block; /* Ensure images behave like blocks */
+  filter: brightness(50%); /* Make the image darker */
+}
+@media (max-width: 768px) {
+  #images {
+    /* Adjust styling for smaller screens (mobile) */
+    gap: 10px; /* Reduce gap between images for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
 }
