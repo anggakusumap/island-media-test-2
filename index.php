@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <section id="what-we-have" class="container center">
+        <section id="what-we-have" class="container center" data-sal="fade">
             <h2>What would you like to have?</h2>
             <p>
                 Coffee plunger pot sweet barista, grounds acerbic coffee instant crema cream in half and half. Spoon
