@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Standalone Laravel Mix</title>
+    <title>Island Media Second Test</title>
     <link rel="stylesheet" href="public/css/app.css">
 </head>
 
@@ -29,7 +29,7 @@
             <img src="public/Home/Header Image.jpg" alt="Header Image">
             <div class="jumbotron-content">
                 <h1>Life begins after Coffee.</h1>
-                <button>VIEW MENU</button>
+                <button><a href="#what-we-have">VIEW MENU</a></button>
             </div>
         </div>
 
@@ -92,7 +92,7 @@
             <article class="container center">
                 <img src="public/Home/blog 1.jpg" alt="blog 1">
                 <div>
-                    <h3>Qui espresso, grounds to go</h3>
+                    <h2>Qui espresso, grounds to go</h2>
                     <p>December 12, 2019 | Espresso</p>
                     <p>
                         Skinny caffeine aged variety filter saucer redeye, sugar
@@ -104,7 +104,7 @@
                         white shop fair trade galão, dark crema breve
                         frappuccino iced strong siphon trifecta in a at viennese.
                     </p>
-                    <p><a href="#">READ MORE</a></p>
+                    <p>READ MORE</p>
                 </div>
             </article>
         </section>
@@ -115,7 +115,7 @@
             <img src="public/Icon/logo.svg" alt="Header Image">
             <address>
                 2800 S White Mountain Rd | Show Low AZ 85901
-                (928) 537-1425 | <a href="mailto:info@grinder-coffee.com">info@grinder-coffee.com</a>
+                (928) 537-1425 | info@grinder-coffee.com
             </address>
 
             <div>
